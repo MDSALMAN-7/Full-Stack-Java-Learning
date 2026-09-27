@@ -26,6 +26,6 @@ public class FinalPrice
 		System.out.println(finalPrice); 
 		*/
 		
-		int finalPrice = (price*qauntity) 
+		int finalPrice = (price*qauntity);
 	}
 }

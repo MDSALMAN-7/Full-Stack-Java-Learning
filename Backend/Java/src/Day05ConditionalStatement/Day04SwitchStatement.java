@@ -12,7 +12,7 @@ public class Day04SwitchStatement
 			case 2:
 				System.out.println("i is 2");
 				break;
-			case 2:
+			case 3:
 				System.out.println("i is 1");
 				break;
 		}

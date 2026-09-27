@@ -23,7 +23,7 @@ public class ExtractDigits
 		int e = number%10;
 		
 		System.out.println(a);
-		System.out.println(x: "Who");
+		System.out.println("Who");
 		System.out.println(b);
 		System.out.println(c);
 		System.out.println(d);
