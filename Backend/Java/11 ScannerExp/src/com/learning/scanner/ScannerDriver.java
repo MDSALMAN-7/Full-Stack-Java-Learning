@@ -7,9 +7,10 @@ public class ScannerDriver {
 		Scanner sc = new Scanner(System.in);
 		System.out.print("Enter your roll number : ");
 		int rollnum = sc.nextInt();
-		sc.nextLine();
+		sc.nextLine(); // Consume the extra char 
 		System.out.print("Enter your name : ");
 		String name = sc.nextLine();
+		sc.close();
 		
 		System.out.println("Name : "+name);
 		System.out.println("Roll Number : "+rollnum);

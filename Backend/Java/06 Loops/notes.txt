@@ -1,0 +1,9 @@
+When use -->
+
+For loop --> when we know number of execution(input is Fix)
+    - List of 2000 customer -> max iteration will be 2000
+    - List of 10000 customer -> max iteration will be 10000
+
+while loop --> when we do not know about total numbers of iterations 
+
+do while loop --> it will first execute then check conditions
