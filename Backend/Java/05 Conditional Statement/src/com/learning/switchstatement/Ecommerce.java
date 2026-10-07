@@ -18,7 +18,6 @@ public class Ecommerce {
 		double finalPrice = amount;
 
 		switch (customer) {
-
 		case "gold":
 			if (amount > 1000) {
 				dis = amount * 20 / 100;
