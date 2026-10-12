@@ -29,23 +29,38 @@ public class StudentMarksSystem {
 		Scanner sc = new Scanner(System.in);
 
 		int marks[] = new int[5];
+		int choice;
+//		displayMenu();
+		
 
 		// First, enter the marks
-		displayMarks(marks, sc);
+//		displayMarks(marks, sc);
 
 		// Calculate total after entering marks
 		int total = calculateTotal(marks);
+		checkStudentresult(total, sc,marks, total);
 
 		System.out.println("Total Marks = " + total);
 
 		// Calculate percentage
 		calculatePercentage(total);
-		findHighest(marks);
-		findLowest(marks);
-	    checkResult(total);
+		
+		
+		
 
 		sc.close();
 
+	}
+
+	public static void displayMenu() {
+		System.out.println("===== Student Marks System =====");
+		System.out.println("1. Display Marks");
+		System.out.println("2. Calculate Total");
+		System.out.println("3. Calculate Percentage");
+		System.out.println("4. Find Highest Mark");
+		System.out.println("5. Find Lowest Mark");
+		System.out.println("6. Check Result");
+		System.out.println("7. Exit");
 	}
 
 	public static void displayMarks(int marks[], Scanner sc) {
@@ -79,30 +94,64 @@ public class StudentMarksSystem {
 //	55 66 44 77 88 
 	public static void findHighest(int[] marks) {
 		int lElement = marks[0];
-		for(int i=1; i<marks.length; i++) {
-			if(lElement<marks[i]) {
+		for (int i = 1; i < marks.length; i++) {
+			if (lElement < marks[i]) {
 				lElement = marks[i];
 			}
 		}
-		System.out.println("Higest marks : "+lElement);
+		System.out.println("Higest marks : " + lElement);
 	}
 
 	public static void findLowest(int[] marks) {
 		int lowestMarks = marks[0];
-		for(int i=1; i<marks.length; i++) {
-			if(lowestMarks>marks[i]) {
+		for (int i = 1; i < marks.length; i++) {
+			if (lowestMarks > marks[i]) {
 				lowestMarks = marks[i];
 			}
 		}
-		System.out.println("Lowest marks : "+lowestMarks);
+		System.out.println("Lowest marks : " + lowestMarks);
 	}
 
 	public static void checkResult(int total) {
-		if(total>180) {
+		if (total > 180) {
 			System.out.println("Pass...");
-		}else {
+		} else {
 			System.err.println("Fail...");
 		}
+	}
+
+	// Menu for checking result
+	public static void checkStudentresult(int choice, Scanner sc, int[] marks,int total) {
+		do {
+			displayMenu();
+			System.out.println("Enter your choice : ");
+			choice = sc.nextInt();
+
+			switch (choice) {
+			case 1:
+				displayMarks(marks, sc);
+				break;
+			case 2:
+				calculateTotal(marks);
+				break;
+			case 3:
+				calculatePercentage(total);
+				break;
+			case 4:
+				findHighest(marks);
+				break;
+			case 5:
+				findLowest(marks);
+				break;
+			case 6:
+				checkResult(total);
+				break;
+			case 7:
+				System.out.println("Nothing to do....");
+				break;
+			}
+
+		} while (choice != 7);
 	}
 
 }
