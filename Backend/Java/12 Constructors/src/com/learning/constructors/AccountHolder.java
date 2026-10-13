@@ -2,6 +2,7 @@ package com.learning.constructors;
 
 public class AccountHolder {
 	// Data
+	// these are instance variable
 	int amount;
 	String account;
 	String name;
