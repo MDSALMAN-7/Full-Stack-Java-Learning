@@ -1,8 +1,12 @@
 package com.learning.constructors3;
 
 class Invoice extends Object {
+	
+	static int gst=18; //  ye variable class  level ka h h
+	
+	// ye sara data instance variable h  or object level h
 	int amount;
-	String itemName;
+	String itemName;  
 	String billingAddress;
 	String customerId;
 	String customerName;
@@ -19,6 +23,10 @@ class Invoice extends Object {
 public class Driver{
 	public static void main(String[] args) {
 		Invoice inv = new Invoice(189999,"Mackbook","BTM Banglore","df345d","Rana");
+		Invoice inv2 = new Invoice(189999,"Mackbook","BTM Banglore","df345d","Salman");
 		System.out.print(inv.customerName);
+		
+		System.out.println("First invoice : "+inv.amount +","+inv.customerId+","+inv.gst);
+		System.out.println("2nd invoice : "+inv.amount +","+inv.customerId+","+inv2.gst);
 	}
 }
