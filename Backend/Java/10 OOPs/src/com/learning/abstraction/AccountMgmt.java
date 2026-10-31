@@ -6,7 +6,8 @@ public class AccountMgmt {
 		// TODO Auto-generated method stub
 		
 		Account account = new Account();
-		account.openAccount("Salman","BTM Layout","KJDFK4KJDLK");
+//		account.openAccount("Salman","BTM Layout","KJDFK4KJDLK");
+		
 
 	}
 
