@@ -1,5 +1,6 @@
 package com.learning.interface1;
 
-public interface IPropertyTaxDiscount {
-
+public interface IPropertyTaxDiscount extends IDiscount
+{
+	public abstract void calculatePropDisc();
 }
