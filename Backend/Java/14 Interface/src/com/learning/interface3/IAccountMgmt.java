@@ -1,5 +1,6 @@
 package com.learning.interface3;
 
-public interface IAccountMgmt {
-	void closeAccount();
+public interface IAccountMgmt  {
+	void accountDetails();
+	
 }

@@ -1,13 +1,11 @@
 package com.learning.interface3;
 
-//@FunctionalInterface 	// this is optional
+//@FunctionalInterface 		// this will force you to have only one abstract
+							// this is optional
+							// From java 8 introduce
 							// when we write annotation. it says to compiler check this method it is  eighter Functional method or not
-public interface IAccount extends IAccountMgmt {
-	void openAccount(); // only one abstract method - Single Abstract method (SAM)
-
-	default void addBeni() {
-
-	}
+public interface IAccount  {
+	String openAccount(String name, String address, int pin); // only one abstract method - Single Abstract method (SAM)
 	
 }
 

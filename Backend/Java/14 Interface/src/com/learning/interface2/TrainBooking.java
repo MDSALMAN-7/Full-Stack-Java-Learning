@@ -41,8 +41,8 @@ public class TrainBooking implements IBooking {
 		System.out.println("TrainBooking.autoUpgrade()");
 	}
 
-	// printTicket method
+	// common or utility method
 	void printTicket(String path, String contents) {
-		// 123 lines --> printing the ticket
+		IBooking.printTicket("", "");
 	}
 }
