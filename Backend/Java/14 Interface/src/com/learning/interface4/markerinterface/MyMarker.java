@@ -7,8 +7,11 @@ public interface MyMarker {
 /* 
  * Marker Interface
  * 
- * Cloning --> Copying the Objects
+ * Cloning/Cloning --> Copying the Objects
  * 
  * Serialization --> 
+ * 
+ * Faq : Can you write your own makerInterface
+ * 
  * 
  */
