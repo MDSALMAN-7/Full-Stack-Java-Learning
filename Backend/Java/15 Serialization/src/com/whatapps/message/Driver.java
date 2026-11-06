@@ -10,7 +10,5 @@ public class Driver {
 		
 		messageSerialization.serializeMsg(message);
 //		System.out.println(message);
-		
-		
 	}
 }
