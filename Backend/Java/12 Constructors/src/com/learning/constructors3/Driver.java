@@ -4,7 +4,7 @@ class Invoice extends Object {
 	
 	static int gst=18; //  ye variable class  level ka h h
 	
-	// ye sara data instance variable h  or object level h
+	// ye sara data instance variable h  or object level Ka h
 	int amount;
 	String itemName;  
 	String billingAddress;
