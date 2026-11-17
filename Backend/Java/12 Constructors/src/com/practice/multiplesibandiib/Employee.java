@@ -16,6 +16,14 @@ class EmpDetails{
 		companyLocation = "Banglore";
 		System.out.println("2. SIB");
 	}
+	
+	// IIB
+	{
+		System.out.println("1. SIB");
+	}
+	{
+		System.out.println("1. SIB");
+	}
 }
 
 public class Employee {
