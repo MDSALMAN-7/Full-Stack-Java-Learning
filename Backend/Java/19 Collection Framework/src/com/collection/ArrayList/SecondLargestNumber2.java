@@ -15,8 +15,6 @@ public class SecondLargestNumber2 {
 
         int max = Integer.MIN_VALUE;
         int max2 = Integer.MIN_VALUE;
-        
-        System.out.println(max);
 
         for (int i = 0; i < numbers.size(); i++) {
 
